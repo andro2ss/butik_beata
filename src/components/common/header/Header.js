@@ -20,7 +20,7 @@ function Header({ navItems }) {
         expand="lg"
         colorScheme="light"
         className="bg-light"
-        placement="fixed-top"
+        // placement="fixed-top"
       >
         <CContainer xl>
           <CNavbarToggler
@@ -31,6 +31,7 @@ function Header({ navItems }) {
           <CNavbarBrand
             href={`#${navItems[0][1]}`}
             onClick={() => setActive(0)}
+            className="mb-0 h1"
           >
             Beata Butik
           </CNavbarBrand>
