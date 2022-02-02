@@ -9,8 +9,8 @@ function App() {
   const navElements = [
     ["Strona główna", "stronaGlowna"],
     ["Godziny otwarcia", "godzinyOtwarcia"],
-    ["Galeria", "galeria"],
     ["Jak dojechać", "jakDojechac"],
+    ["Galeria", "galeria"],
   ];
 
   return (
