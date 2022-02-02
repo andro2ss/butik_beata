@@ -22,7 +22,7 @@ function Header({ navItems }) {
         className="bg-light"
         placement="fixed-top"
       >
-        <CContainer fluid>
+        <CContainer xl>
           <CNavbarToggler
             aria-label="Toggle navigation"
             aria-expanded={visible}

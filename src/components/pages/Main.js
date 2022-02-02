@@ -3,7 +3,7 @@ import { CCarousel, CCarouselItem, CContainer, CImage } from "@coreui/react";
 
 function Main(props) {
   return (
-    <CContainer fluid>
+    <CContainer xl>
       <div id="stronaGlowna">asdasdas</div>
       <div id="godzinyOtwarcia">
         asdsadasd asdasdasda Lorem ipsum dolor sit amet, consectetur adipisicing
