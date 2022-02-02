@@ -20,7 +20,7 @@ function Header({ navItems }) {
         expand="lg"
         colorScheme="light"
         className="bg-light"
-        // placement="fixed-top"
+        placement="fixed-top"
       >
         <CContainer xl>
           <CNavbarToggler
