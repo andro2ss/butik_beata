@@ -5,34 +5,40 @@ import {
   CCol,
   CContainer,
   CImage,
-  CRow,
 } from "@coreui/react";
 import Iframe from "react-iframe";
 import CIcon from "@coreui/icons-react";
 import { cilLocationPin } from "@coreui/icons";
+import "./Main.scss";
 
-function Main(props) {
+function Main() {
   return (
-    <CContainer xl>
-      <div id="stronaGlowna">
+    <CContainer xl className="shadow p-3 mb-5 bg-body rounded">
+      <div className="page__container" id="stronaGlowna">
         <br />
         <h1>Beata</h1>
+        <p>Serdecznie zaprasza!</p>
         <p>
-          Serdecznie zaprasza. Jesteśmy sklepem odzieżowym z modą damską i
-          akcesoriami. Nieprzerwanie świadczymy dla Państwa usługi od 200 roku.
-          Nasz personel z chęcią służyć będzie radą i pomocą. Staramy się iść z
-          trendami i mieć coś nowego dla Państwa chociaż raz w tygodniu.
+          Jesteśmy sklepem odzieżowym z modą damską i akcesoriami. Nieprzerwanie
+          świadczymy dla Państwa usługi od 200 roku. Nasz personel z chęcią
+          służyć będzie radą i pomocą. Staramy się iść z trendami i mieć coś
+          nowego dla Państwa chociaż raz w tygodniu.
         </p>
         <p>
           Informacje o tymczasowych zmianach godzin pracy, jak i o dostawach
           nowinek ze świata mody znajdą Państwo na naszym{" "}
           <a href="https://www.facebook.com/">facebooku</a>.
         </p>
+        <p>
+          W razie jakiś pytań również zapraszamy na nasz{" "}
+          <a href="https://www.facebook.com/">facebook</a>, staramy się na
+          bieżąco Państwu odpowiadać w godzinach otwarcia butiku
+        </p>
       </div>
       <hr />
-      <div id="godzinyOtwarcia">
+      <div className="page__container" id="godzinyOtwarcia">
         <CContainer>
-          <p className="fs-3 text">Godziny Otwarcia</p>
+          <h2>Godziny Otwarcia</h2>
           <div className="row justify-content-md-center">
             <CCol xs lg={2}>
               Poniedziałek
@@ -92,9 +98,39 @@ function Main(props) {
         </CContainer>
       </div>
       <hr />
-      <div id="galeria">
-        <p className="fs-3 text">Galeria</p>
-        <CCarousel controls transition="crossfade">
+      <div className="page__container" id="jakDojechac">
+        <h2>Jak dojechać</h2>
+        <CContainer>
+          <div className="row justify-content-md-center">
+            <CCol md={4}>
+              <span className="location__address">
+                <span className="address--block">
+                  <CIcon icon={cilLocationPin} size="md" /> Róża Wiatrów
+                  <br />
+                  poziom: parter
+                </span>
+                <span className="address--street">
+                  Promienna 7c <br />
+                  Włocławek 87-800 <br />
+                </span>
+              </span>
+            </CCol>
+            <CCol md={8}>
+              <Iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d604.9064391813467!2d19.039696729268623!3d52.66673699874015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471c990f5dd4e7a9%3A0xf1f663ea581e21d1!2sPromienna%207C%2C%2087-816%20W%C5%82oc%C5%82awek!5e0!3m2!1spl!2spl!4v1643798804739!5m2!1spl!2spl"
+                style="border:0;"
+                allowFullScreen=""
+                loading="lazy"
+                className="location__map"
+              ></Iframe>
+            </CCol>
+          </div>
+        </CContainer>
+      </div>
+      <hr />
+      <div className="page__container" id="galeria">
+        <h2>Galeria</h2>
+        <CCarousel controls transition="crossfade" indicators>
           <CCarouselItem>
             <CImage
               className="d-block w-100"
@@ -125,34 +161,6 @@ function Main(props) {
           </CCarouselItem>
         </CCarousel>
       </div>
-      <hr />
-      <div id="jakDojechac"></div>
-      <p className="fs-3 text">Jak dojechać</p>
-      <CContainer>
-        <div className="row justify-content-md-center">
-          <CCol sm="auto">
-            <span>
-              <CIcon icon={cilLocationPin} size="md" />
-              Róża Wiatrów <br />
-              poziom: parter <br />
-              <br />
-              Promienna 7c <br />
-              Włocławek 87-800 <br />
-            </span>
-          </CCol>
-          <CCol sm="auto">
-            <Iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d604.9064391813467!2d19.039696729268623!3d52.66673699874015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471c990f5dd4e7a9%3A0xf1f663ea581e21d1!2sPromienna%207C%2C%2087-816%20W%C5%82oc%C5%82awek!5e0!3m2!1spl!2spl!4v1643798804739!5m2!1spl!2spl"
-              width="350"
-              height="300"
-              style="border:0;"
-              allowFullScreen=""
-              loading="lazy"
-            ></Iframe>
-          </CCol>
-        </div>
-      </CContainer>
-
       <hr />
     </CContainer>
   );

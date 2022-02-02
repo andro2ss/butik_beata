@@ -1,0 +1,27 @@
+.location__map {
+  width: 100%;
+  height: 300px;
+}
+
+.location__address {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .address--block{
+    margin-bottom: 1rem;
+  }
+.address--street{
+  margin-bottom: 2rem;
+}
+}
+
+.page__container{
+  padding-top: 4rem;
+  margin-bottom: 2rem;
+
+  h2{
+    margin-bottom: 1rem;
+  }
+}
