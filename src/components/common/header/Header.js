@@ -9,6 +9,7 @@ import {
   CNavbarBrand,
   CCollapse,
 } from "@coreui/react";
+import "./Header.scss";
 
 function Header({ navItems }) {
   const [visible, setVisible] = useState(false);
@@ -19,10 +20,10 @@ function Header({ navItems }) {
       <CNavbar
         expand="lg"
         colorScheme="light"
-        className="bg-light"
+        className="header__nav"
         placement="fixed-top"
       >
-        <CContainer xl>
+        <CContainer xl className="border-bottom border-bottom-warning">
           <CNavbarToggler
             aria-label="Toggle navigation"
             aria-expanded={visible}
@@ -33,7 +34,7 @@ function Header({ navItems }) {
             onClick={() => setActive(0)}
             className="mb-0 h1"
           >
-            Beata Butik
+            <span className="font--title">Beata Butik</span>
           </CNavbarBrand>
           <CCollapse className="navbar-collapse" visible={visible}>
             <CNavbarNav className="me-auto mb-2 mb-lg-0">

@@ -1,0 +1,9 @@
+.header__nav {
+  background: rgba(218, 165, 32, 0.8);
+
+  @media only screen and (min-width: 1200px) {
+
+    background: transparent;
+  }
+
+}

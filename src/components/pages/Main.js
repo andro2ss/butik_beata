@@ -5,37 +5,87 @@ import {
   CCol,
   CContainer,
   CImage,
+  CListGroup,
+  CListGroupItem,
 } from "@coreui/react";
 import Iframe from "react-iframe";
 import CIcon from "@coreui/icons-react";
 import { cilLocationPin } from "@coreui/icons";
 import "./Main.scss";
 
+function FancySeparator() {
+  return (
+    <div className="fancy-sep">
+      <span>
+        <img src={require("../../Images/Bb_favicon.png")} width="100" />
+      </span>
+    </div>
+  );
+}
+
 function Main() {
   return (
     <CContainer xl className="shadow p-3 mb-5 bg-body rounded">
       <div className="page__container" id="stronaGlowna">
         <br />
-        <h1>Beata</h1>
-        <p>Serdecznie zaprasza!</p>
-        <p>
-          Jesteśmy sklepem odzieżowym z modą damską i akcesoriami. Nieprzerwanie
-          świadczymy dla Państwa usługi od 200 roku. Nasz personel z chęcią
-          służyć będzie radą i pomocą. Staramy się iść z trendami i mieć coś
-          nowego dla Państwa chociaż raz w tygodniu.
-        </p>
-        <p>
-          Informacje o tymczasowych zmianach godzin pracy, jak i o dostawach
-          nowinek ze świata mody znajdą Państwo na naszym{" "}
-          <a href="https://www.facebook.com/">facebooku</a>.
-        </p>
-        <p>
-          W razie jakiś pytań również zapraszamy na nasz{" "}
-          <a href="https://www.facebook.com/">facebook</a>, staramy się na
-          bieżąco Państwu odpowiadać w godzinach otwarcia butiku
-        </p>
+        <h1 className="font--title title--custom">Beata Butik</h1>
+        <p className="h4">Serdecznie zaprasza!</p>
+        <div className="row justify-content-md-center">
+          <CCol md={4}>
+            <span className="home__text">
+              Jesteśmy sklepem odzieżowym z modą damską i akcesoriami.
+              Nieprzerwanie świadczymy dla Państwa usługi od 200 roku. Nasz
+              personel z chęcią służyć będzie radą i pomocą. Staramy się iść z
+              trendami i mieć coś nowego dla Państwa chociaż raz w tygodniu.
+            </span>
+          </CCol>
+          <CCol md={4}>
+            <CImage
+              className="home__images"
+              src={require("./images/shopping_woman.jpg")}
+              alt="Kobieta z torbami"
+            />
+          </CCol>
+        </div>
+        <div className="row justify-content-md-center row--custom">
+          <CCol md={4}>
+            <CImage
+              className="home__images"
+              src={require("./images/bags.jpg")}
+              alt="torebki"
+            />
+          </CCol>
+          <CCol md={4}>
+            <span className="home__text">
+              Informacje o tymczasowych zmianach godzin pracy, jak i o dostawach
+              nowinek ze świata mody znajdą Państwo na naszym{" "}
+              <a href="https://www.facebook.com/">facebooku</a>. Na wszelakie
+              pytania również staramy się odpowiadać w godzinach pracy poprzez
+              naszego <a href="https://www.facebook.com/">facebooka</a>
+            </span>
+          </CCol>
+        </div>
+        <div className="row justify-content-md-center">
+          <CCol md={4}>
+            <span className="home__text">Nasz asortyment</span>
+            <CListGroup flush>
+              <CListGroupItem>Bluzki</CListGroupItem>
+              <CListGroupItem>Spodnie</CListGroupItem>
+              <CListGroupItem>Kiecki</CListGroupItem>
+              <CListGroupItem>Sok kielecki</CListGroupItem>
+              <CListGroupItem>Akcesoria</CListGroupItem>
+            </CListGroup>
+          </CCol>
+          <CCol md={4}>
+            <CImage
+              className="home__images"
+              src={require("./images/hanger.jpg")}
+              alt="Puste wieszaki"
+            />
+          </CCol>
+        </div>
       </div>
-      <hr />
+      <FancySeparator />
       <div className="page__container" id="godzinyOtwarcia">
         <CContainer>
           <h2>Godziny Otwarcia</h2>
@@ -97,7 +147,7 @@ function Main() {
           </div>
         </CContainer>
       </div>
-      <hr />
+      <FancySeparator />
       <div className="page__container" id="jakDojechac">
         <h2>Jak dojechać</h2>
         <CContainer>
@@ -127,7 +177,7 @@ function Main() {
           </div>
         </CContainer>
       </div>
-      <hr />
+      <FancySeparator />
       <div className="page__container" id="galeria">
         <h2>Galeria</h2>
         <CCarousel controls transition="crossfade" indicators>
@@ -161,7 +211,6 @@ function Main() {
           </CCarouselItem>
         </CCarousel>
       </div>
-      <hr />
     </CContainer>
   );
 }

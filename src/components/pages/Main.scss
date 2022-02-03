@@ -1,3 +1,10 @@
+$color-BB-gold: #DAA520;
+
+.title--custom {
+  font-size: 5rem;
+  color: $color-BB-gold;
+}
+
 .location__map {
   width: 100%;
   height: 300px;
@@ -9,19 +16,78 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  .address--block{
+
+  .address--block {
     margin-bottom: 1rem;
   }
-.address--street{
-  margin-bottom: 2rem;
-}
+
+  .address--street {
+    margin-bottom: 2rem;
+  }
 }
 
-.page__container{
-  padding-top: 4rem;
-  margin-bottom: 2rem;
+.page__container {
+    padding-top: 4rem;
 
-  h2{
+
+  h2 {
     margin-bottom: 1rem;
   }
+
+  .home__images{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .home__text{
+    display: block;
+    width: 100%;
+    text-align: start;
+    margin: 1rem 0;
+  }
+
+  .row--custom{
+    @media only screen and (max-width: 1200px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+}
+
+
+.fancy-sep {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+}
+
+.fancy-sep span {
+  position: relative;
+  display: inline-block;
+}
+
+.fancy-sep span:before,
+.fancy-sep span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 1600px;
+  height: 2px;
+  background: $color-BB-gold;
+}
+
+.fancy-sep span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.fancy-sep span:after {
+  left: 100%;
+  margin-left: 15px;
 }
