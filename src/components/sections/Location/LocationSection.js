@@ -14,7 +14,7 @@ export function LocationSection() {
           <CCol md={4}>
             <span className="location__address">
               <span className="address--block">
-                <CIcon icon={cilLocationPin} size="md" /> Róża Wiatrów
+                <CIcon icon={cilLocationPin} size="lg" /> Róża Wiatrów
                 <br />
                 poziom: parter
               </span>

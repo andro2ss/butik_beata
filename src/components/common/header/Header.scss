@@ -1,16 +1,16 @@
 .header__nav {
-  //background: rgba(218, 165, 32, 0.8);
+
   background: rgb(255, 255, 255);
   border-bottom: #DAA520 solid 2px;
 
-  //@media only screen and (min-width: 1200px) {
-  //
-  //  background: transparent;
-  //}
-
-  .active{
+  .active {
     animation: jello;
     animation-duration: 800ms;
     animation-delay: 300ms;
+    font-weight: bold;
+  }
+
+  .navbar-collapse {
+    text-transform: uppercase;
   }
 }
