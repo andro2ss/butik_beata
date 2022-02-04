@@ -1,5 +1,15 @@
 $color-BB-gold: #DAA520;
 
+#godzinyOtwarcia{
+  .container{
+    background-image: url("../../images/Bb_big.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+}
+
 .title--custom {
   font-size: 5rem;
   color: $color-BB-gold;
@@ -29,7 +39,6 @@ $color-BB-gold: #DAA520;
 .page__container {
     padding-top: 4rem;
 
-
   h2 {
     margin-bottom: 1rem;
   }
@@ -48,9 +57,8 @@ $color-BB-gold: #DAA520;
     text-align: start;
     margin: 1rem 0;
   }
-
-  .row--custom{
-    @media only screen and (max-width: 1200px) {
+    .row--custom{
+    @media only screen and (max-width: 768px) {
       flex-direction: column-reverse;
     }
   }

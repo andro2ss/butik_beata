@@ -42,7 +42,10 @@ function Header({ navItems }) {
                 <CNavItem key={navItem[0]}>
                   <CNavLink
                     href={`#${navItem[1]}`}
-                    onClick={() => setActive(itemIndex)}
+                    onClick={() => {
+                      setActive(itemIndex);
+                      setVisible(false);
+                    }}
                     className={` ${active === itemIndex ? "active" : ""}`}
                   >
                     {navItem[0]}

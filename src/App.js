@@ -1,5 +1,6 @@
 import "./App.css";
 import "@coreui/coreui/dist/css/coreui.min.css";
+import "animate.css";
 
 import Header from "./components/common/header/Header";
 import Main from "./components/pages/Main";

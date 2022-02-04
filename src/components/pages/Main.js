@@ -17,7 +17,7 @@ function FancySeparator() {
   return (
     <div className="fancy-sep">
       <span>
-        <img src={require("../../Images/Bb_favicon.png")} width="100" />
+        <img src={require("../../images/Bb_small.png")} width="100" />
       </span>
     </div>
   );
@@ -30,7 +30,7 @@ function Main() {
         <br />
         <h1 className="font--title title--custom">Beata Butik</h1>
         <p className="h4">Serdecznie zaprasza!</p>
-        <div className="row justify-content-md-center">
+        <div className="row justify-content-md-center align-items-center">
           <CCol md={4}>
             <span className="home__text">
               Jesteśmy sklepem odzieżowym z modą damską i akcesoriami.
@@ -47,7 +47,7 @@ function Main() {
             />
           </CCol>
         </div>
-        <div className="row justify-content-md-center row--custom">
+        <div className="row justify-content-md-center align-items-center row--custom">
           <CCol md={4}>
             <CImage
               className="home__images"
@@ -65,7 +65,7 @@ function Main() {
             </span>
           </CCol>
         </div>
-        <div className="row justify-content-md-center">
+        <div className="row justify-content-md-center align-items-center">
           <CCol md={4}>
             <span className="home__text">Nasz asortyment</span>
             <CListGroup flush>
@@ -87,8 +87,8 @@ function Main() {
       </div>
       <FancySeparator />
       <div className="page__container" id="godzinyOtwarcia">
+        <h2>Godziny Otwarcia</h2>
         <CContainer>
-          <h2>Godziny Otwarcia</h2>
           <div className="row justify-content-md-center">
             <CCol xs lg={2}>
               Poniedziałek

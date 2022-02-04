@@ -6,4 +6,9 @@
     background: transparent;
   }
 
+  .active{
+    animation: jello;
+    animation-duration: 800ms;
+    animation-delay: 300ms;
+  }
 }
