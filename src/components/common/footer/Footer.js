@@ -16,7 +16,7 @@ function Footer(props) {
                 Facebook'u
                 <br />
                 <CLink href="https://coreui.io">
-                  <CIcon icon={cibFacebook} size="xl" /> Butik Beata
+                  <CIcon icon={cibFacebook} size="xl" /> Beata Butik
                 </CLink>
               </li>
               <li className="list-group-item">
