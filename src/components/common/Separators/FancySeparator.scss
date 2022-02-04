@@ -1,0 +1,33 @@
+.fancy-sep {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+}
+
+.fancy-sep span {
+  position: relative;
+  display: inline-block;
+}
+
+.fancy-sep span:before,
+.fancy-sep span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 1600px;
+  height: 2px;
+  background: #DAA520;
+}
+
+.fancy-sep span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.fancy-sep span:after {
+  left: 100%;
+  margin-left: 15px;
+}

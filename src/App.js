@@ -1,10 +1,17 @@
-import "./App.css";
+import "./style/App.css";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import "animate.css";
+import "./style/CustomStyle.scss";
 
 import Header from "./components/common/header/Header";
-import Main from "./components/pages/Main";
 import Footer from "./components/common/footer/Footer";
+import { CContainer } from "@coreui/react";
+import { WelcomeSection } from "./components/sections/Welcome/WelcomeSection";
+import { FancySeparator } from "./components/common/Separators/FancySeparator";
+import { OpenHoursSection } from "./components/sections/OpenHours/OpenHoursSection";
+import { LocationSection } from "./components/sections/Location/LocationSection";
+import { GallerySection } from "./components/sections/Gallery/GallerySection";
+import React from "react";
 
 function App() {
   const navElements = [
@@ -17,7 +24,15 @@ function App() {
   return (
     <div className="App">
       <Header navItems={navElements} />
-      <Main />
+      <CContainer xl className="shadow p-3 mb-5 bg-body rounded">
+        <WelcomeSection />
+        <FancySeparator />
+        <OpenHoursSection />
+        <FancySeparator />
+        <LocationSection />
+        <FancySeparator />
+        <GallerySection />
+      </CContainer>
       <Footer />
     </div>
   );

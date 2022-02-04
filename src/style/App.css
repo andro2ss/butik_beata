@@ -28,17 +28,6 @@
     color: #61dafb;
 }
 
-.font--title {
-    font-family: 'Comforter', cursive;
-    font-weight: 700;
-}
-
-body {
-    background-image: url("images/Bb_big.png");
-    background-size: 300px 300px;
-
-}
-
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);

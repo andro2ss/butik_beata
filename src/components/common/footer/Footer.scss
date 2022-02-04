@@ -1,6 +1,6 @@
 .footer {
   background: rgb(255, 255, 255);
-border-top: #DAA520 solid 2px;
+  border-top: #DAA520 solid 2px;
 
   .footer__content {
     display: flex;
@@ -12,7 +12,7 @@ border-top: #DAA520 solid 2px;
       flex-direction: column;
     }
 
-    .footer__text{
+    .footer__text {
       font-size: 0.8rem;
       color: #32363e;
       margin-bottom: 1rem;

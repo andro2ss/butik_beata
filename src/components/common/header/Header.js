@@ -23,7 +23,7 @@ function Header({ navItems }) {
         className="header__nav"
         placement="fixed-top"
       >
-        <CContainer xl className="border-bottom border-bottom-warning">
+        <CContainer xl>
           <CNavbarToggler
             aria-label="Toggle navigation"
             aria-expanded={visible}

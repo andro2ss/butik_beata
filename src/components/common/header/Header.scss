@@ -1,10 +1,12 @@
 .header__nav {
-  background: rgba(218, 165, 32, 0.8);
+  //background: rgba(218, 165, 32, 0.8);
+  background: rgb(255, 255, 255);
+  border-bottom: #DAA520 solid 2px;
 
-  @media only screen and (min-width: 1200px) {
-
-    background: transparent;
-  }
+  //@media only screen and (min-width: 1200px) {
+  //
+  //  background: transparent;
+  //}
 
   .active{
     animation: jello;

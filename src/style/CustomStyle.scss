@@ -1,0 +1,30 @@
+$color-BB-gold: #DAA520;
+
+body {
+  background-image: url("../images/Bb_big.png");
+  background-size: 300px 300px;
+  background-attachment: fixed;
+}
+
+.title--custom {
+  font-size: 5rem;
+  color: $color-BB-gold;
+}
+
+.font--title {
+  font-family: 'Comforter', cursive;
+  font-weight: 700;
+}
+
+.page__container {
+  padding-top: 4rem;
+
+
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+}
+
+
