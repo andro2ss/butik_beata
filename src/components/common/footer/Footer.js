@@ -1,10 +1,10 @@
 import React from "react";
 import { CContainer, CFooter, CImage, CLink } from "@coreui/react";
 import CIcon from "@coreui/icons-react";
-import { cibFacebook, cilArrowCircleTop } from "@coreui/icons";
+import { cibFacebook } from "@coreui/icons";
 import "./Footer.scss";
 
-function Footer(props) {
+function Footer() {
   return (
     <CFooter className="footer">
       <CContainer xl>
@@ -15,7 +15,7 @@ function Footer(props) {
               <li className="list-group-item">
                 Facebook'u
                 <br />
-                <CLink href="https://coreui.io">
+                <CLink href="#">
                   <CIcon icon={cibFacebook} size="xl" /> Beata Butik
                 </CLink>
               </li>
