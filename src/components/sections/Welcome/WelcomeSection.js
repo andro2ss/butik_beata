@@ -1,4 +1,4 @@
-import { CCol, CImage, CListGroup, CListGroupItem } from "@coreui/react";
+import { CCol, CImage } from "@coreui/react";
 import React from "react";
 import "./WelcomeSection.scss";
 
@@ -37,10 +37,15 @@ export function WelcomeSection() {
           <span className="home__text">
             Informacje o tymczasowych zmianach godzin pracy, jak i o nowym
             asortymencie znajdą Państwo na naszym{" "}
-            <a href="https://www.facebook.com/">facebooku</a>.<br />
+            <a href="https://www.facebook.com/Beata.Butik.Wloclawek">
+              facebooku
+            </a>
+            .<br />
             <br /> Z chęcią odpowiemy na Państwa pytania poprzez naszego{" "}
-            <a href="https://www.facebook.com/">facebooka</a> w godzinach
-            funkcjonowania butiku
+            <a href="https://www.facebook.com/Beata.Butik.Wloclawek">
+              facebooka
+            </a>{" "}
+            w godzinach funkcjonowania butiku
           </span>
         </CCol>
       </div>

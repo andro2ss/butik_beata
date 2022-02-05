@@ -15,7 +15,7 @@ function Footer() {
               <li className="list-group-item">
                 Facebook'u
                 <br />
-                <CLink href="#">
+                <CLink href="https://www.facebook.com/Beata.Butik.Wloclawek">
                   <CIcon icon={cibFacebook} size="xl" /> Beata Butik
                 </CLink>
               </li>
