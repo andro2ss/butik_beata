@@ -52,6 +52,18 @@ function Header({ navItems }) {
                   </CNavLink>
                 </CNavItem>
               ))}
+              <CNavItem key="facebook">
+                <CNavLink
+                  href="https://www.facebook.com/Beata.Butik.Wloclawek"
+                  onClick={() => {
+                    setActive(navItems.length);
+                    setVisible(false);
+                  }}
+                  className={` ${active === navItems.length ? "active" : ""}`}
+                >
+                  Facebook
+                </CNavLink>
+              </CNavItem>
             </CNavbarNav>
           </CCollapse>
         </CContainer>
