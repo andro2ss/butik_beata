@@ -4,7 +4,7 @@ import "./WelcomeSection.scss";
 
 export function WelcomeSection() {
   return (
-    <div className="page__container" id="stronaGlowna">
+    <div className="page__container" id="oNas">
       <br />
       <h1 className="font--title title--custom">Beata Butik</h1>
       <p className="h4">Serdecznie zaprasza!</p>

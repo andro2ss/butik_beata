@@ -15,7 +15,7 @@ import Cookie from "./components/common/Cookie/Cookie";
 
 function App() {
   const navElements = [
-    ["Strona główna", "stronaGlowna"],
+    ["O nas", "oNas"],
     ["Godziny otwarcia", "godzinyOtwarcia"],
     ["Jak dojechać", "jakDojechac"],
     ["Galeria", "galeria"],
