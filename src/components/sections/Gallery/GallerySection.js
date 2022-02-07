@@ -15,29 +15,50 @@ export function GallerySection() {
         <CCarouselItem>
           <CImage
             className="d-block w-100"
-            src={require("../images/img1.jpg")}
-            alt="slide 1"
+            src={require("../../../images/budynek.jpg")}
+            alt="Centrum Handlowe"
           />
         </CCarouselItem>
         <CCarouselItem>
           <CImage
             className="d-block w-100"
-            src={require("../images/img2.jpg")}
-            alt="slide 2"
+            src={require("../../../images/witryna.jpg")}
+            alt="Witryna sklepu"
           />
         </CCarouselItem>
         <CCarouselItem>
           <CImage
             className="d-block w-100"
-            src={require("../images/img3.jpg")}
+            src={require("../../../images/torbaSzal.jpg")}
             alt="slide 3"
           />
         </CCarouselItem>
         <CCarouselItem>
           <CImage
             className="d-block w-100"
-            src={require("../images/img4.jpg")}
-            alt="slide 4"
+            src={require("../../../images/spodnie.jpg")}
+            alt="Spodnie"
+          />
+        </CCarouselItem>
+        <CCarouselItem>
+          <CImage
+            className="d-block w-100"
+            src={require("../../../images/regalCiuchy.jpg")}
+            alt="Regal z ciuchami"
+          />
+        </CCarouselItem>
+        <CCarouselItem>
+          <CImage
+            className="d-block w-100"
+            src={require("../../../images/czapki.jpg")}
+            alt="Czapki"
+          />
+        </CCarouselItem>
+        <CCarouselItem>
+          <CImage
+            className="d-block w-100"
+            src={require("../../../images/bluzki.jpg")}
+            alt="bluzki"
           />
         </CCarouselItem>
       </CCarousel>

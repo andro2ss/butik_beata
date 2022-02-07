@@ -20,8 +20,8 @@ export function WelcomeSection() {
         <CCol md={4}>
           <CImage
             className="home__images"
-            src={require("../images/shopping_woman.jpg")}
-            alt="Kobieta z torbami"
+            src={require("../../../images/budynek.jpg")}
+            alt="Centrum Handlowe"
           />
         </CCol>
       </div>
@@ -29,8 +29,8 @@ export function WelcomeSection() {
         <CCol md={4}>
           <CImage
             className="home__images"
-            src={require("../images/bags.jpg")}
-            alt="torebki"
+            src={require("../../../images/witryna.jpg")}
+            alt="Witryna sklepu"
           />
         </CCol>
         <CCol md={4}>
@@ -63,7 +63,7 @@ export function WelcomeSection() {
         <CCol md={4}>
           <CImage
             className="home__images"
-            src={require("../images/hanger.jpg")}
+            src={require("../../../images/spodnie.jpg")}
             alt="Puste wieszaki"
           />
         </CCol>
