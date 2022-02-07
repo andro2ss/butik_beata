@@ -52,7 +52,7 @@ export function OpenHoursSection() {
             Sobota
           </CCol>
           <CCol xs lg={2}>
-            10:00 - 14:00
+            10:00 - 13:00
           </CCol>
         </div>
         <div className="row justify-content-md-center">
