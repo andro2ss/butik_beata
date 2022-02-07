@@ -8,6 +8,9 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    &:first-child{
+      order: 1;
+    }
     @media only screen and (max-width: 768px) {
       flex-direction: column;
     }
@@ -18,10 +21,23 @@
       margin-bottom: 1rem;
     }
 
+    .store__owner{
+      order: 2;
+      font-size: 0.6rem;
+      color: #41464f;
+      margin-bottom: 1rem;
+      align-self: end;
+      @media only screen and (max-width: 768px){
+        align-self: center;
+        order: 5;
+      }
+    }
+
     .logo {
       max-height: 15rem;
       margin-bottom: 1rem;
       animation-duration: 5s;
+      order: 3;
     }
   }
 }

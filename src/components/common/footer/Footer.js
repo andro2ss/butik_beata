@@ -30,6 +30,13 @@ function Footer() {
               </li>
             </ul>
           </div>
+          {/*<div className="store__owner">*/}
+          {/*  Butik prowadzony przez:*/}
+          {/*  <br />*/}
+          {/*  Beata Brzeska*/}
+          {/*  <br />*/}
+          {/*  Regon: 910921566 NIP: 8881750276*/}
+          {/*</div>*/}
           <CImage
             className="logo animate__animated animate__swing animate__infinite"
             src={require("../../../images/Bb_big.png")}
