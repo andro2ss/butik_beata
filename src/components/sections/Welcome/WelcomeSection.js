@@ -57,7 +57,9 @@ export function WelcomeSection() {
             <li className="list-group-item">Stylowe akcesoria,</li>
             <li className="list-group-item">Atrakcyjne ceny,</li>
             <li className="list-group-item">Przyjazna atmosfera,</li>
-            <li className="list-group-item">Kompetenta pomoc przy zakupach.</li>
+            <li className="list-group-item">
+              Kompetentna pomoc przy zakupach.
+            </li>
           </ul>
         </CCol>
         <CCol md={4}>
